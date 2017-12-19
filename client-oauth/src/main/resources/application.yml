@@ -1,0 +1,21 @@
+server:
+    session:
+      cookie:
+        name: UISESSION
+
+security:
+  sessions: always
+  oauth2:
+    client:
+      clientId: web-client
+      clientSecret: web-client-secret
+      accessTokenUri: http://localhost:8081/oauth/token
+      userAuthorizationUri: http://localhost:8081/oauth/authorize   
+      scope: call-services
+      
+    resource:
+      userInfoUri: http://localhost:8082/services/me
+
+logging:
+  level:
+    org.springframework.security: DEBUG
