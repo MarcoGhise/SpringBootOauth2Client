@@ -9,9 +9,6 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
-/**
- * Created by daz on 29/06/2017.
- */
 @Controller
 @SessionAttributes("authorizationRequest")
 public class ConfirmAccess {
@@ -45,8 +42,5 @@ public class ConfirmAccess {
 	}
 
 	private static String SCOPE = "<button name=\"%key%\" type=\"submit\" value=\"true\">Approve</button><button name=\"%key%\" type=\"submit\" value=\"false\">Cancel</button>";
-/*	
-	private static String SCOPE = "<li><div class='form-group'>%scope%: <input type='radio' name='%key%'"
-			+ " value='true'%approved%>Approve</input> <input type='radio' name='%key%' value='false'%denied%>Deny</input></div></li>";
-*/
+
 }
